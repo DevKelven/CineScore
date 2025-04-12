@@ -1,0 +1,295 @@
+/* .logo {background:#5a5a5a; height:231px; margin:56px 0 0 0; text-align:center;}
+.logo img {max-width:100%; height:auto;}
+.container {margin-top:50px;}
+.alerta {color:#721c24;display:block;}
+
+body{
+    background-color: #363636;
+}
+
+#container-image{
+    display:flex;
+}
+
+
+.poster{
+    width:900px;
+    height:500px;
+    margin-top:100px;
+    color:white;
+    text-align:center;
+}
+
+
+.descricoes{
+    width:50px;
+    height:500px;
+    color:white;
+    margin-left: 370px;
+    margin-top: 40px;
+} 
+
+.descricao{
+    display:flex;
+    width:100px;
+    gap:15px;
+    align-items:center;
+}
+
+
+.descricoes img{
+    width:50px;
+    height:90px;
+}
+
+.descricoes:hover{
+    transform: scale(2rem);
+    transition: 1.5s;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #12100f !important; 
+    color: white !important;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .location {
+    color: red;
+    font-weight: bold;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 40px;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .hero-content {
+    margin-top: -80px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+    color: white;
+  }
+
+  .hero-content button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .sessions {
+    display: flex;
+    gap: 10px;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+  }
+
+  .texto-recente{
+    text-align: center;
+  }
+
+  .session-card {
+    background: #252322;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 150px;
+    flex: 1;
+    color: white;
+    text-align: center;
+  }
+
+  .session-card :hover{
+    cursor: pointer;
+  }
+
+  .session-card img{
+    width: 150px;
+    margin-left: 8px;
+  }
+
+  .section-title {
+    padding: 20px 40px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .movie-grid {
+    display: flex;
+    gap: 15px;
+    padding: 0 40px 40px 40px;
+    overflow-x: auto;
+  }
+
+  .movie-card {
+    background: #1e1c1b;
+    border-radius: 10px;
+    min-width: 150px;
+    max-width: 200px;
+    flex-shrink: 0;
+  }
+
+  .movie-card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .movie-card .tag {
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+  }
+
+
+  .noticias-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .noticias-header {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+
+  .noticias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+
+  .noticia-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    min-height: 180px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  }
+
+  .noticia-overlay {
+    padding: 15px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+    width: 100%;
+  }
+
+  .noticia-titulo {
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 6px;
+  }
+
+  .noticia-descricao {
+    font-size: 0.85em;
+    color: #ccc;
+}
+
+/* Sinopse */
+
+.container-filme {
+  max-width: 800px;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: 150px;
+  padding: 50px 40px;
+}
+.topo {
+  display: flex;
+  gap: 20px;
+}
+.poster {
+  width: 180px;
+  border-radius: 8px;
+}
+.detalhes {
+  flex: 1;
+}
+.titulo {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.info {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+.botoes {
+  margin: 10px 0;
+}
+.botao-disney {
+  background-color: #00b3db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.sinopse {
+  margin-top: 20px;
+}
+.sinopse h2 {
+  color: #ffc107;
+}
+.sinopse p {
+  text-align: justify;
+  line-height: 1.6;
+}
